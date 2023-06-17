@@ -35,7 +35,7 @@ const Message = ({ message }) => {
        rounded-[15px] bg-white
        max-w-[250px]
 
-        ${message.senderId === currentUser.uid  && "bg-blue-500 text-black "} `}>
+        ${message.senderId === currentUser.uid  && "bg-blue-500 text-white "} `}>
         <p class="w-full break-words">{message.text}</p>
         {message.img && <img  src={message.img} alt="" />}
       </div>
